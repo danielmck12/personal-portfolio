@@ -1,3 +1,66 @@
-h1 {
-     color:blue;
+* {
+     box-sizing:border-box;
 }
+
+html, body {
+     margin:0;
+     padding:0;
+     background-color: #f2f2f2;
+}
+
+header {
+     background-color: #c4bcc4;
+     width:100%;
+     text-align: center;
+     position: fixed;
+     z-index: 999;
+     height: 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+nav a {
+     text-decoration: none;
+}
+
+nav li {
+     display: inline;
+     margin:50px;
+     font-size: 1.5em;
+     font-weight:500;
+}
+
+nav .large-bold {
+     font-size:2em;
+     font-weight: bold;
+}
+
+main {
+     position: relative;
+     top:100px;
+     width: 100%;
+}
+
+.site-hero {
+     height: 800px;
+     display: flex;
+     justify-content: center;
+}
+.project-section {
+     border:3px solid black;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     
+}
+
+.project {
+     width:400px;
+     height:400px;
+     border:2px solid grey;
+}
+
+/*#C4BCB3
+#EBE0D5*/
