@@ -44,23 +44,49 @@ main {
 }
 
 .site-hero {
-     height: 800px;
+     height: 1000px;
      display: flex;
      justify-content: center;
+     align-items: center;
+}
+
+.site-hero img{
+     height: 60%;
 }
 .project-section {
-     border:3px solid black;
+     /* border:3px solid black; */
      display: flex;
-     justify-content: space-around;
+     justify-content: center;
      align-items: center;
-     
+     flex-wrap: wrap;
 }
 
 .project {
-     width:400px;
-     height:400px;
-     border:2px solid grey;
+     width:45%;
+     min-height:600px;
+     border:5px solid grey;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     text-align: center;
 }
 
+.project img {
+     width:100%;
+     height: 100%;
+     
+}
+
+.project:hover p {
+     display: inherit;
+     
+}
+
+.project p {
+     display: none;
+     position: absolute;
+     font-size: 1.25em;
+}
 /*#C4BCB3
 #EBE0D5*/
