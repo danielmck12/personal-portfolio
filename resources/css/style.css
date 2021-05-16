@@ -63,30 +63,40 @@ main {
 
 .project {
      width:45%;
-     min-height:600px;
-     border:5px solid grey;
+     height:600px;
+     /* border:5px solid grey; */
      display: flex;
      justify-content: center;
      align-items: center;
      flex-wrap: wrap;
-     text-align: center;
+     text-align: left;
 }
 
 .project img {
      width:100%;
      height: 100%;
-     
+     z-index: 998;
 }
 
 .project:hover p {
-     display: inherit;
-     
+     z-index: 999;
+}
+
+.project:hover img {
+     opacity: 0.2;
 }
 
 .project p {
-     display: none;
+     display: flex;
+     justify-content: start;
+     flex-wrap:wrap;
+     z-index: 1;
      position: absolute;
      font-size: 1.25em;
+     width:20%;
+
 }
+
+
 /*#C4BCB3
 #EBE0D5*/
