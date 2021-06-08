@@ -23,6 +23,8 @@ header {
 
 nav a {
      text-decoration: none;
+     color:hsla(271, 68%, 32%,1);
+     transition-duration: 100ms;
 }
 
 nav li {
@@ -30,6 +32,10 @@ nav li {
      margin:50px;
      font-size: 1.5em;
      font-weight:500;
+}
+
+nav a:hover {
+     color:hsla(271, 68%, 32%,0.4);
 }
 
 nav .large-bold {
@@ -53,8 +59,23 @@ main {
 .site-hero img{
      height: 60%;
 }
+.section-header {
+     margin:50px;
+     display: flex;
+     justify-content: start;
+}
+
+.section-header h2{
+     margin-left: 100px;
+     border-left: 4px solid black;
+     border-right: 4px solid black;
+     border-radius: 50%;
+     font-size: 2.25em;
+     padding:20px;
+}
+
 .project-section {
-     /* border:3px solid black; */
+     /* border:3px solid black;  */
      display: flex;
      justify-content: center;
      align-items: center;
@@ -64,18 +85,21 @@ main {
 .project {
      width:45%;
      height:600px;
-     /* border:5px solid grey; */
+     border:5px solid rgba(0,0,0,0);
      display: flex;
      justify-content: center;
      align-items: center;
      flex-wrap: wrap;
      text-align: left;
+     opacity: 0.9;
 }
 
 .project img {
      width:100%;
      height: 100%;
      z-index: 998;
+     border-radius: 10px;
+     transition-duration: 300ms;
 }
 
 .project:hover p {
@@ -94,9 +118,31 @@ main {
      position: absolute;
      font-size: 1.25em;
      width:20%;
+}
+.technology-section {
+     text-align: left;
+     margin-bottom: 100px;
+}
+.technology-images {
+     display:flex;
+     justify-content:space-evenly;
+}
 
+.technology-section img {
+     width:auto;
+     height:250px;
 }
 
 
+
+
+footer {
+     height:300px;
+     background-color: #c4bcc4;
+     font-size:6rem;/*note for next time - destroy this when read */
+     text-align: center;
+     color:rgb(202, 14, 14);
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 /*#C4BCB3
 #EBE0D5*/
